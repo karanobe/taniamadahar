@@ -314,10 +314,6 @@ box-shadow: 6px 5px 14px -4px rgba(0,0,0,0.6);
   }  
 }
 
-.wrappic1 img {
-  max-width: 100%;
-}
-
 /*---------------------------------------------*/
 .how-btn1 {
   padding: 0 15px;
@@ -602,4 +598,9 @@ svg {
 
 .white {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.logo {
+  width: 100%;
+  max-width: 150px;
 }
