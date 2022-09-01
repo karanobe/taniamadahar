@@ -1218,6 +1218,10 @@
 .fa-instagram:before {
   content: "\f16d";
 }
+.fa-tiktok:before {
+  color: #111111;
+  filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+}
 .fa-flickr:before {
   content: "\f16e";
 }
