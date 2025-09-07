@@ -1,0 +1,20 @@
+---
+import { GENERAL } from '../pages/lib/general';
+---
+
+<section class="relative">
+    <div class="absolute inset-0 bg-black/40 z-10"></div>
+    <div class="relative min-h-[400px] flex items-center justify-center bg-cover bg-center" style={"background-image: url('" + GENERAL.banner.imgUrl.src + "')"};        
+    >
+        <div class="relative z-20 text-center text-white max-w-3xl px-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tighter mb-4">{GENERAL.banner.title}</h1>
+            <p class="text-lg md:text-xl font-light mb-8">{GENERAL.banner.text}</p>
+            <a href={GENERAL.banner.buttonUrl} target="_blank" class="inline-block">
+                <button
+                    class="flex mx-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-12 px-6 bg-primary-brown text-white text-lg font-semibold leading-normal tracking-wide hover:bg-opacity-90 transition-all">
+                    <span class="truncate">{GENERAL.banner.buttonText}</span>
+                </button>
+            </a>
+        </div>
+    </div>
+</section>

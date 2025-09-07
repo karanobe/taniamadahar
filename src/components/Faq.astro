@@ -1,0 +1,98 @@
+---
+import { FAQS } from '../pages/lib/faq';
+---
+<section class="bg-primary-stone-50 py-20 px-4 sm:px-6 lg:px-8" id="faq">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-stone-800 text-4xl font-bold leading-tight tracking-[-0.015em] text-center mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-4" id="faq-accordion">
+            {FAQS.map((item, index) => (
+                <div class="bg-primary-stone-50 rounded-lg overflow-hidden shadow-sm">
+                    <button
+                        class="w-full p-6 text-left flex justify-between items-center hover:bg-primary-stone-100 transition-colors duration-200 border-b border-stone-200"
+                        aria-expanded="false"
+                        aria-controls={`faq-panel-${index + 1}`}
+                        data-accordion-button
+                    >
+                        <h3 class="text-stone-800 text-xl font-bold">{item.question}</h3>
+                        <svg
+                            class="w-6 h-6 text-stone-800 transition-transform duration-300 ease-out"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            data-accordion-icon
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div
+                        id={`faq-panel-${index + 1}`}
+                        role="region"
+                        aria-hidden="true"
+                        class="overflow-hidden max-h-0 opacity-0 transition-[max-height,opacity] duration-300 ease-out"
+                        data-accordion-panel
+                    >
+                        <p class="text-stone-600 px-6 pb-6 pt-2">{item.answer}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
+
+<script>
+    const accordionRoot = document.getElementById('faq-accordion') as HTMLElement | null;
+    if (accordionRoot) {
+        accordionRoot.addEventListener('click', (event) => {
+            const target = event.target as HTMLElement | null;
+            if (!target) return;
+
+            const button = target.closest('[data-accordion-button]') as HTMLButtonElement | null;
+            if (!button) return;
+
+            const panelId = button.getAttribute('aria-controls');
+            if (!panelId) return;
+
+            const panel = document.getElementById(panelId) as HTMLElement | null;
+            const icon = button.querySelector('[data-accordion-icon]') as HTMLElement | null;
+
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+            // Close all other panels
+            accordionRoot.querySelectorAll<HTMLButtonElement>('[data-accordion-button]').forEach((btn) => {
+                if (btn !== button) {
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+            accordionRoot.querySelectorAll<HTMLElement>('[data-accordion-panel]').forEach((pnl) => {
+                if (pnl !== panel) {
+                    pnl.style.maxHeight = '0px';
+                    pnl.setAttribute('aria-hidden', 'true');
+                    pnl.classList.add('opacity-0');
+                    const prev = pnl.previousElementSibling as HTMLElement | null;
+                    const ico = prev?.querySelector('[data-accordion-icon]') as HTMLElement | null;
+                    ico?.classList.remove('rotate-180');
+                }
+            });
+
+            // Toggle current
+            if (!isExpanded) {
+                button.setAttribute('aria-expanded', 'true');
+                if (panel) {
+                    const fullHeight = panel.scrollHeight;
+                    panel.style.maxHeight = fullHeight + 'px';
+                    panel.setAttribute('aria-hidden', 'false');
+                    panel.classList.remove('opacity-0');
+                    icon?.classList.add('rotate-180');
+                }
+            } else {
+                button.setAttribute('aria-expanded', 'false');
+                if (panel) {
+                    panel.style.maxHeight = '0px';
+                    panel.setAttribute('aria-hidden', 'true');
+                    panel.classList.add('opacity-0');
+                    icon?.classList.remove('rotate-180');
+                }
+            }
+        });
+    }
+</script>

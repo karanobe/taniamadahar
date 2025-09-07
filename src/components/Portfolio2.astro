@@ -1,0 +1,25 @@
+---
+import { PORTFOLIO } from '../pages/lib/portfolio';
+import { PORTFOLIO_HEADLINE } from '../pages/lib/portfolio';
+import { PORTFOLIO_SUBHEADLINE } from '../pages/lib/portfolio';
+---
+
+
+<section class="bg-stone-50 py-20">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="mb-12 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tighter text-[var(--text-primary)] sm:text-5xl md:text-6xl">{PORTFOLIO_HEADLINE}</h1>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-[var(--text-secondary)]">{PORTFOLIO_SUBHEADLINE}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {PORTFOLIO.map((item, index) => (
+            <div class="group flex flex-col rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <div
+                    class="w-full aspect-[3/4] bg-cover bg-center"
+                    style={"background-image: url('" + item.imgUrl.src + "');"}
+                ></div>
+            </div>
+            ))}
+        </div>
+    </div>
+</section>

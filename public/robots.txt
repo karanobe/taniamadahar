@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taniamadahar.karanobe.com/sitemap-index.xml

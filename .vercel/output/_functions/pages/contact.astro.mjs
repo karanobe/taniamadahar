@@ -1,0 +1,34 @@
+/* empty css                                 */
+import { e as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, k as renderComponent } from '../chunks/astro/server_pSUyj-cj.mjs';
+import 'kleur/colors';
+import { $ as $$Layout } from '../chunks/Layout__w2-YxKU.mjs';
+import 'clsx';
+import { G as GENERAL } from '../chunks/general_VftFHJyn.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$Contact$1 = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${maybeRenderHead()}<div class="py-20 px-4 sm:px-6 lg:px-8"> <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16"> <div class="space-y-6"> <h1 class="text-4xl font-bold tracking-tighter text-[#161413]">Get in Touch</h1> <p class="text-[#7a736c] text-base leading-relaxed">
+I'd love to hear from you! Whether you have a question about my services, want to discuss a potential project, or just want to say hello, please don't hesitate to reach out. Fill out the form or connect
+                with me through the channels below.
+</p> <div class="space-y-4"> <h3 class="text-xl font-semibold text-[#161413] pt-4">Contact Information</h3> <div class="space-y-3 text-[#7a736c]"> <p class="flex items-center gap-3"> <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"> <path d="M224,48H32a8,8,0,0,0-8,8V192a8,8,0,0,0,8,8H224a8,8,0,0,0,8-8V56A8,8,0,0,0,224,48Zm-8,136H40V64L128,112l88-48Z"></path> </svg> <a class="hover:text-[#161413] transition-colors"${addAttribute("mailto:" + GENERAL.brand.email, "href")}>${GENERAL.brand.email}</a> </p> <p class="flex items-center gap-3"> <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg> <span>${GENERAL.brand.phone}</span> </p> </div> </div> <div class="space-y-4"> <h3 class="text-xl font-semibold text-[#161413] pt-4">Follow Me</h3> <div class="flex space-x-4"> <a class="text-[#7a736c] hover:text-[#161413] transition-colors"${addAttribute(GENERAL.brand.instagram, "href")}> <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"> <path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path> </svg> </a> <a class="text-[#7a736c] hover:text-[#161413] transition-colors"${addAttribute(GENERAL.brand.tiktok, "href")}> <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"> <path d="M16.8217 5.1344C16.0886 4.29394 15.6479 3.19805 15.6479 2H14.7293M16.8217 5.1344C17.4898 5.90063 18.3944 6.45788 19.4245 6.67608C19.7446 6.74574 20.0786 6.78293 20.4266 6.78293V10.2191C18.645 10.2191 16.9932 9.64801 15.6477 8.68211V15.6707C15.6477 19.1627 12.8082 22 9.32386 22C7.50043 22 5.85334 21.2198 4.69806 19.98C3.64486 18.847 2.99994 17.3331 2.99994 15.6707C2.99994 12.2298 5.75592 9.42509 9.17073 9.35079M16.8217 5.1344C16.8039 5.12276 16.7861 5.11101 16.7684 5.09914M6.9855 17.3517C6.64217 16.8781 6.43802 16.2977 6.43802 15.6661C6.43802 14.0734 7.73249 12.7778 9.32394 12.7778C9.62087 12.7778 9.9085 12.8288 10.1776 12.9124V9.40192C9.89921 9.36473 9.61622 9.34149 9.32394 9.34149C9.27287 9.34149 8.86177 9.36884 8.81073 9.36884M14.7244 2H12.2097L12.2051 15.7775C12.1494 17.3192 10.8781 18.5591 9.32386 18.5591C8.35878 18.5591 7.50971 18.0808 6.98079 17.3564" stroke="currentColor" stroke-linejoin="round"></path> </svg> </a> </div> </div> </div> <div class="bg-white p-8 rounded-lg shadow-sm border border-[#eeedec]"> <form action="#" class="space-y-6" method="POST"> <div> <label class="block text-sm font-medium text-[#161413]" for="name">Name</label> <div class="mt-1"> <input class="block w-full rounded-md border-[#dddbd9] bg-[#FDFDFC] focus:border-[#756657] focus:ring-[#756657] sm:text-sm py-3 px-4 placeholder:text-[#aea8a0]" id="name" name="name" placeholder="Your Name" type="text"> </div> </div> <div> <label class="block text-sm font-medium text-[#161413]" for="email">Email</label> <div class="mt-1"> <input class="block w-full rounded-md border-[#dddbd9] bg-[#FDFDFC] focus:border-[#756657] focus:ring-[#756657] sm:text-sm py-3 px-4 placeholder:text-[#aea8a0]" id="email" name="email" placeholder="Your Email" type="email"> </div> </div> <div> <label class="block text-sm font-medium text-[#161413]" for="subject">Subject</label> <div class="mt-1"> <input class="block w-full rounded-md border-[#dddbd9] bg-[#FDFDFC] focus:border-[#756657] focus:ring-[#756657] sm:text-sm py-3 px-4 placeholder:text-[#aea8a0]" id="subject" name="subject" placeholder="Subject" type="text"> </div> </div> <div> <label class="block text-sm font-medium text-[#161413]" for="message">Message</label> <div class="mt-1"> <textarea class="block w-full rounded-md border-[#dddbd9] bg-[#FDFDFC] focus:border-[#756657] focus:ring-[#756657] sm:text-sm py-3 px-4 placeholder:text-[#aea8a0]" id="message" name="message" placeholder="Your Message" rows="4"></textarea> </div> </div> <div> <button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-[#756657] hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#756657] transition-colors" type="submit">
+Send Message
+</button> </div> </form> </div> </div> </div>`;
+}, "/Users/karanoberoi/Documents/Personal/taniamadahar/src/components/Contact.astro", void 0);
+
+const $$Contact = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "ContactComponent", $$Contact$1, {})} ` })}`;
+}, "/Users/karanoberoi/Documents/Personal/taniamadahar/src/pages/contact.astro", void 0);
+
+const $$file = "/Users/karanoberoi/Documents/Personal/taniamadahar/src/pages/contact.astro";
+const $$url = "/contact";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+    __proto__: null,
+    default: $$Contact,
+    file: $$file,
+    url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

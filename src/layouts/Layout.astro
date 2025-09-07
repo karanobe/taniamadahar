@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+        <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+        <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Tania Madahar – Customized, Trend-Forward Looks</title>
+		<meta name="description" content="Where timeless Indian tradition meets modern California style — customized, trend-forward looks made just for you." />
+		<meta property="og:title" content="Tania Madahar – Customized, Trend-Forward Looks" />
+		<meta property="og:description" content="Where timeless Indian tradition meets modern California style — customized, trend-forward looks made just for you." />
+		<meta property="og:image" content="/og_image.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		
+	</head>
+
+    <body class="bg-primary">
+        <div class="relative flex size-full min-h-screen flex-col bg-[#FDFDFC] group/design-root overflow-x-hidden" style="font-family: Manrope, 'Noto Sans', sans-serif;">
+            <div class="layout-container flex h-full grow flex-col"></div>
+				<Header />
+                <main class="flex-1">
+                    <slot />
+                </main>
+				<Footer />
+            </div>
+        </div>
+    </body>	
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
