@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { e as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, k as renderComponent } from '../chunks/astro/server_pSUyj-cj.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout__w2-YxKU.mjs';
+import { $ as $$Layout } from '../chunks/Layout_D0qk2Esb.mjs';
 import 'clsx';
 import { G as GENERAL } from '../chunks/general_VftFHJyn.mjs';
 export { renderers } from '../renderers.mjs';
@@ -11,7 +11,7 @@ const $$AboutPage = createComponent(($$result, $$props, $$slots) => {
 }, "/Users/karanoberoi/Documents/Personal/taniamadahar/src/components/AboutPage.astro", void 0);
 
 const $$About = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "AboutPageComponent", $$AboutPage, {})} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "About Tania Madahar \u2013 Fashion Designer & Style Consultant", "description": "Learn about Tania Madahar's journey in fashion design, her expertise in Indian clothing, and her passion for creating customized, trend-forward looks." }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "AboutPageComponent", $$AboutPage, {})} ` })}`;
 }, "/Users/karanoberoi/Documents/Personal/taniamadahar/src/pages/about.astro", void 0);
 
 const $$file = "/Users/karanoberoi/Documents/Personal/taniamadahar/src/pages/about.astro";

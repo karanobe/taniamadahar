@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { e as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, k as renderComponent } from '../chunks/astro/server_pSUyj-cj.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout__w2-YxKU.mjs';
+import { $ as $$Layout } from '../chunks/Layout_D0qk2Esb.mjs';
 import 'clsx';
 import { P as PORTFOLIO_HEADLINE, a as PORTFOLIO_SUBHEADLINE, b as PORTFOLIO } from '../chunks/portfolio_DrX0sBQA.mjs';
 export { renderers } from '../renderers.mjs';
@@ -11,7 +11,7 @@ const $$Portfolio2 = createComponent(($$result, $$props, $$slots) => {
 }, "/Users/karanoberoi/Documents/Personal/taniamadahar/src/components/Portfolio2.astro", void 0);
 
 const $$Portfolio = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Portfolio2", $$Portfolio2, {})} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Portfolio \u2013 Tania Madahar's Fashion Design Gallery", "description": "Explore Tania Madahar's stunning portfolio of custom Indian clothing, bridal wear, and fusion fashion designs. See her latest creations and design expertise." }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Portfolio2", $$Portfolio2, {})} ` })}`;
 }, "/Users/karanoberoi/Documents/Personal/taniamadahar/src/pages/portfolio.astro", void 0);
 
 const $$file = "/Users/karanoberoi/Documents/Personal/taniamadahar/src/pages/portfolio.astro";

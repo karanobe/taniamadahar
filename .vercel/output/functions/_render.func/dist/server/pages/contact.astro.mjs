@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { e as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, k as renderComponent } from '../chunks/astro/server_pSUyj-cj.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout__w2-YxKU.mjs';
+import { $ as $$Layout } from '../chunks/Layout_D0qk2Esb.mjs';
 import 'clsx';
 import { G as GENERAL } from '../chunks/general_VftFHJyn.mjs';
 export { renderers } from '../renderers.mjs';
@@ -16,7 +16,7 @@ Send Message
 }, "/Users/karanoberoi/Documents/Personal/taniamadahar/src/components/Contact.astro", void 0);
 
 const $$Contact = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "ContactComponent", $$Contact$1, {})} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Contact Tania Madahar \u2013 Book Your Fashion Consultation", "description": "Get in touch with Tania Madahar to book your personalized fashion consultation. Schedule appointments for custom designs, bridal wear, and style consultations." }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "ContactComponent", $$Contact$1, {})} ` })}`;
 }, "/Users/karanoberoi/Documents/Personal/taniamadahar/src/pages/contact.astro", void 0);
 
 const $$file = "/Users/karanoberoi/Documents/Personal/taniamadahar/src/pages/contact.astro";

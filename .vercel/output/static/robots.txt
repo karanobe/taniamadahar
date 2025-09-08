@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://taniamadahar.karanobe.com/sitemap-index.xml
+Sitemap: https://taniamadahar.vercel.app/sitemap-index.xml

@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { e as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, l as renderScript, k as renderComponent } from '../chunks/astro/server_pSUyj-cj.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout__w2-YxKU.mjs';
+import { $ as $$Layout } from '../chunks/Layout_D0qk2Esb.mjs';
 import 'clsx';
 import { G as GENERAL } from '../chunks/general_VftFHJyn.mjs';
 import { T as TESTIMONIALS } from '../chunks/testimonials_FNvTWVCD.mjs';
@@ -33,7 +33,7 @@ const $$Banner = createComponent(($$result, $$props, $$slots) => {
 }, "/Users/karanoberoi/Documents/Personal/taniamadahar/src/components/Banner.astro", void 0);
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Hero", $$Hero, {})} ${renderComponent($$result2, "About", $$About, {})} ${renderComponent($$result2, "Portfolio", $$Portfolio, {})} ${renderComponent($$result2, "Testimonials", $$Testimonials, {})} ${renderComponent($$result2, "Faq", $$Faq, {})} ${renderComponent($$result2, "Banner", $$Banner, {})} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Tania Madahar \u2013 Customized, Trend-Forward Indian Fashion", "description": "Where timeless Indian tradition meets modern California style \u2014 customized, trend-forward looks made just for you. Expert fashion design and bridal wear." }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Hero", $$Hero, {})} ${renderComponent($$result2, "About", $$About, {})} ${renderComponent($$result2, "Portfolio", $$Portfolio, {})} ${renderComponent($$result2, "Testimonials", $$Testimonials, {})} ${renderComponent($$result2, "Faq", $$Faq, {})} ${renderComponent($$result2, "Banner", $$Banner, {})} ` })}`;
 }, "/Users/karanoberoi/Documents/Personal/taniamadahar/src/pages/index.astro", void 0);
 
 const $$file = "/Users/karanoberoi/Documents/Personal/taniamadahar/src/pages/index.astro";

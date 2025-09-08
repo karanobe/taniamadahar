@@ -1,11 +1,11 @@
 /* empty css                                 */
 import { e as createComponent, k as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_pSUyj-cj.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout__w2-YxKU.mjs';
+import { $ as $$Layout } from '../chunks/Layout_D0qk2Esb.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Legal = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="flex flex-1 justify-center py-16 px-6 sm:px-10 lg:px-20"> <div class="w-full max-w-4xl space-y-12"> <h1 class="text-4xl sm:text-5xl font-bold text-[#4B4036] tracking-tight text-center">Terms and Conditions</h1> <div class="space-y-10 text-[#5C5046]"> <section> <p class="text-base leading-relaxed">
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Terms & Conditions \u2013 Tania Madahar Fashion Policies", "description": "Read Tania Madahar's terms and conditions, privacy policy, and refund policy. Important information about custom orders, bridal appointments, and customer responsibilities." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="flex flex-1 justify-center py-16 px-6 sm:px-10 lg:px-20"> <div class="w-full max-w-4xl space-y-12"> <h1 class="text-4xl sm:text-5xl font-bold text-[#4B4036] tracking-tight text-center">Terms and Conditions</h1> <div class="space-y-10 text-[#5C5046]"> <section> <p class="text-base leading-relaxed">
 Welcome to Tania Madahar Designs, where we specialize in exquisite Indian clothing designed with passion and tradition. Please read the following terms and conditions carefully before making a purchase. By placing an order with us, you agree to these terms.
 </p> </section> <section> <h2 class="text-2xl sm:text-3xl font-bold text-[#756657] mb-4 pb-2 border-b border-[#F3F0ED]">Terms and Conditions</h2> <p class="text-base leading-relaxed">
 These Terms and Conditions govern your use of the Style Studio website and services. By accessing or using our platform, you agree to comply with these terms. Our services include fashion design
