@@ -66,14 +66,14 @@ import { GENERAL } from '../pages/lib/general';
                 {NAVIGATION.headerLinks.map((link, index) => (
                     <a class="text-stone-700 text-lg font-medium hover:text-primary-brown-hover transition-colors py-3 border-b border-stone-700" href={link.href}>{link.label}</a>
                 ))}
-            </div>
+            </div>            
             
             <!-- Mobile CTA Button -->
             <div class="mt-auto pt-6">
-                <a href={NAVIGATION.headerCta.href} target="_blank" class="inline-block">
-                    <button
-                        class="w-full flex items-center justify-center rounded-md h-12 bg-primary-brown text-white text-base font-semibold leading-normal tracking-wide hover:bg-opacity-90 transition-all">
-                        {NAVIGATION.headerCta.label}
+                <a href={NAVIGATION.headerCta.href} target="_blank">
+                    <button class="w-full flex items-center justify-center rounded-md h-12 bg-primary-brown text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all"
+                    >
+                        <span class="truncate">{NAVIGATION.headerCta.label}</span>
                     </button>
                 </a>
             </div>
